@@ -1,7 +1,7 @@
 # Packages to install
-> Protoc
-> protoc-gen-go and protoc-gen-go-
-> grpc-web
+Protoc
+protoc-gen-go and protoc-gen-go-
+grpc-web
 
 # Install protoc
 go get -u google.golang.org/protobuf/cmd/protoc-gen-go
