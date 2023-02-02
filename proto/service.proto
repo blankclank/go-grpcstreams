@@ -1,0 +1,15 @@
+syntax = "proto3";
+package main;
+option go_package=".;hardwaremonitoring";
+
+message HardwareStats {
+    int32 cpu = 1;
+    int32 memory_free = 2;
+    int32 memory_used = 3;
+}
+
+message EmptyRequest {}
+
+service HardwareMonitor {
+    rpc Monitor(EmptyRequest) returns (stream HardwareStats) {}
+}
